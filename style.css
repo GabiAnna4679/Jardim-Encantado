@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8DFDB;
+    color: #444;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #3368A0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+header h1 {
+    color: #F2EFE7;
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #66A3BF;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C8DFDB;
+}
+
+/* INÍCIO */
+
+.inicio {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #C8DFDB;
+}
+
+.inicio h2 {
+    color: #a84c70;
+    font-size: 38px;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.flor-decoracao {
+    font-size: 100px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #66A3BF;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #66A3BF;
+}
+
+/* SOBRE */
+
+.sobre {
+    text-align: center;
+    padding: 50px 15%;
+}
+
+.sobre h2,
+.destaques h2,
+.pagina h2 {
+    color: #66A3BF;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    line-height: 1.7;
+}
+
+/* CARDS */
+
+.destaques {
+    text-align: center;
+    padding: 40px 8%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #66A3BF;
+    margin: 12px 0;
+}
+
+/* PÁGINAS */
+
+.pagina {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 8% 60px;
+}
+
+.produto {
+    background-color: white;
+    width: 270px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.emoji-flor,
+.emoji-buque {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    color: #66A3BF;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.produto strong {
+    display: block;
+    color: #3368A0;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    background-color: #b85c7b;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #963f60;
+}
+
+/* CONTATO */
+
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 30px 10% 70px;
+    flex-wrap: wrap;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.informacoes {
+    padding: 20px;
+    max-width: 350px;
+}
+
+.informacoes h3 {
+    color: #a84c70;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #3368A0;
+    text-align: center;
+    padding: 20px;
+    color: #66A3BF;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .flor-decoracao {
+        margin-top: 30px;
+        font-size: 70px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .contato {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
